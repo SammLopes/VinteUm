@@ -23,6 +23,12 @@ public class Baralho {
         this.tamanhoMonte = this.baralho.size();
     }
 
+    //Metodo que aumenta a quantidade de baralhos que serão usados na partida 
+    public int ajuntaBaralho(int n){
+        int somaBaralho = this.baralho.size() * n;
+        return somaBaralho;
+    }
+
     public int dobrarTamanhoMonte(){
         if(dobrar == true  ){
             return tamanhoMonte * 2; 
