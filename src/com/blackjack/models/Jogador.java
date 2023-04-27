@@ -13,7 +13,13 @@ public class Jogador{
     private int pontos;
     private String nome;
 
-    
+    //Metodo construtor com parametro 
+    public Jogador(String nome ,List<Carta> mao, List<Carta> cartasGanhas ) {
+        this.nome = nome;
+        this.mao = mao;
+        this.cartasGanhas = cartasGanhas;
+        this.pontos = 0;
+    }
 
     //Metodo construtor
     public Jogador(){
