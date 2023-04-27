@@ -34,6 +34,11 @@ public class Jogador{
     
     //Metodos getters e setters
     //getters
+
+    public String getNome(){
+        return this.nome;
+    }
+
     public List<Carta> getMao(){
         return this.mao;
     }
@@ -56,6 +61,11 @@ public class Jogador{
     }
 
     //setters
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
     public void setMao(List<Carta> cartas){
         this.mao = cartas;
     }

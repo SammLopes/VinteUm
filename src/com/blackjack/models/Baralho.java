@@ -12,8 +12,8 @@ public class Baralho {
 
     public Baralho(){
         String[] nipe = {"Copas","Espadas","Ouros","Paus"};
-        String[] face = {"2","3","4","5","6","8","9","10","Q","J","K","As","7"};
-        int[] valor =   { 0,  0,  0,  0,  0,  0,  0,   0,  2,  3,  4,  11,  10};
+        String[] face = {"As","2","3","4","5","6","7","8","9","10","Q","J","K"};
+        int[] valor =   {  1,  2,  3,  4,  5,  6,  7,  8,  9,  10,  10, 10, 10};
 
         for(int i = 0; i < nipe.length;i++){
             for(int j = 0; j < face.length; j++){
