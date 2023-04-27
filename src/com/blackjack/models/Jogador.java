@@ -6,8 +6,10 @@ import java.util.List;
 public class Jogador{
 
     //atributos
-    private List<Carta> mao ;
-    private List<Carta> cartasGanhas ;
+    private List<Carta> mao;
+    private int tamanhoMao;
+    private List<Carta> cartasGanhas;
+    private int tamanhoCartasGanhas;
     private int pontos;
 
     //Metodo construtor
@@ -17,6 +19,15 @@ public class Jogador{
         this.pontos = 0;
     }
 
+    //Metodo que retorna o tamanho das listas
+    public int tamanhoMao(){
+        return this.tamanhoMao;
+    }
+
+    public int tamanhoCartasGanhas(){
+        return this.tamanhoCartasGanhas;
+    }
+    
     //Metodos getters e setters
     //getters
     public List<Carta> getMao(){
