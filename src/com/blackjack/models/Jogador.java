@@ -11,12 +11,16 @@ public class Jogador{
     private List<Carta> cartasGanhas;
     private int tamanhoCartasGanhas;
     private int pontos;
+    private String nome;
+
+    
 
     //Metodo construtor
     public Jogador(){
         this.mao = new ArrayList<>();
         this.cartasGanhas = new ArrayList<>();
         this.pontos = 0;
+        this.nome = "";
     }
 
     //Metodo que retorna o tamanho das listas
@@ -68,4 +72,9 @@ public class Jogador{
         this.pontos = pontos;
     }
 
+    //Metodo toString da classa jogador
+    @Override
+    public String toString(){
+        return "Jogador: "+this.nome+" Mão = {"+this.mao+"}";
+    }
 }
