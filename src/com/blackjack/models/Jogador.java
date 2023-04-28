@@ -107,11 +107,24 @@ public class Jogador{
     public void comprarCartas(Baralho b){
         int i = 0;
         do{
-
             i++;
             comprarCarta(b);
-
         }while(i < 2);
+    }
+
+    public void comprarCartasDois(Baralho b){
+        do{
+            comprarCarta(b);
+        }while(menor19() && menor21());
+    }
+
+    //Metodos de limites de compra
+    private boolean menor19(){
+        return calcPontos() > 19; 
+    }
+
+    private boolean menor21(){
+        return calcPontos() > 21;
     }
 
     //Metodo toString da classa jogador
