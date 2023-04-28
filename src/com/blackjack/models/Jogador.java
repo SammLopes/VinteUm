@@ -88,6 +88,15 @@ public class Jogador{
         this.pontos = pontos;
     }
 
+    //Metodo que calcula os pontos do jogador
+    public int calcPontos(){
+        int aux = 0;
+        for(Carta carta : mao){
+            aux += carta.getValor();
+        }
+        return aux;
+    }
+
     //Metodo toString da classa jogador
     @Override
     public String toString(){
