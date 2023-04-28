@@ -97,6 +97,23 @@ public class Jogador{
         return aux;
     }
 
+    //Metodo que compra uma carta
+    public void comprarCarta(Baralho b){
+        Carta c = b.compCarta() ;
+        mao.add(c);
+        
+   }
+    //Metodo de compra de cartas do jogador
+    public void comprarCartas(Baralho b){
+        int i = 0;
+        do{
+
+            i++;
+            comprarCarta(b);
+
+        }while(i < 2);
+    }
+
     //Metodo toString da classa jogador
     @Override
     public String toString(){
