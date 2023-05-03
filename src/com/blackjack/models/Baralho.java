@@ -89,4 +89,9 @@ public class Baralho {
     public boolean embaralhar(){
         return embaralhar = true;
     }
+
+    @Override
+    public String toString(){
+        return "Quantidade : "+tamanhoMonte;
+    }
 }
